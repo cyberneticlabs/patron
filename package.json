@@ -1,0 +1,31 @@
+{
+  "name": "patron",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build --cwd src/apps/patron",
+    "dev": "nuxt dev --cwd src/apps/patron",
+    "generate": "nuxt generate --cwd src/apps/patron",
+    "preview": "nuxt preview --cwd src/apps/patron",
+    "postinstall": "sh scripts/postinstall.sh"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^4.5.0",
+    "@nuxtjs/i18n": "^9.0.0",
+    "dotenv": "^16.4.0",
+    "nuxt": "^4.3.0",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0"
+  },
+  "pnpm": {
+    "allowedScripts": [
+      "@parcel/watcher",
+      "esbuild",
+      "vue-demi"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --font-family-body: 'Inter', sans-serif;
+  --color-primary-50: #f0f9ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-500: #0ea5e9;
+  --color-primary-950: #082f49;
+}
+
+.dark {
+  --color-background: var(--color-gray-950);
+}

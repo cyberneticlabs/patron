@@ -1,0 +1,15 @@
+{
+  "app": {
+    "title": "Patron",
+    "description": "A Nuxt 4 multilayer application"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close"
+  }
+}
