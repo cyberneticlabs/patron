@@ -19,7 +19,8 @@ pnpm test    # Run tests
 - `src/apps/patron/app/`: Patron application (pages, components, composables, plugins)
 - `src/layers/core/app/`: Shared layer (modules, design tokens, base layout)
 - `i18n/locales/core/`: Shared i18n translations
-- `reference/DESIGN.md`: Design system documentation
+- `reference/DESIGN.md`: Design system token source of truth
+- `reference/design-system.md`: Implementation guide — Tailwind classes, component patterns, color usage. **Read before writing any styled component.**
 
 ## Tech Stack
 
@@ -44,7 +45,7 @@ Patron uses Nuxt's multi-layer system: the **core layer** provides shared infras
 - **`extends: ['../../layers/core']`** in `src/apps/patron/nuxt.config.ts` merges both layers.
 - Files in the patron layer **override** core layer files with the same path (e.g., `pages/index.vue` overrides core's).
 - Merged directories: `app/` (pages, components, composables, plugins, middleware), `assets/`, `locales/`.
-- Core layer provides: `@nuxt/ui` module, Tailwind v4 theme (Inter font, primary color palette), dark mode setup (`light`/`dark` directly).
+- Core layer provides: `@nuxt/ui` module, Tailwind v4 theme (Geist font, neon-green primary, dark-gray neutral), dark mode locked to `dark`.
 - Patron layer provides: `pages/index.vue`, runtime config (`apiKey`, `public.siteUrl`).
 
 ### Managing layers
