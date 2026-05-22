@@ -26,3 +26,9 @@ settings.local.*
 
 # External symlinked directories (not tracked in git)
 i18n/
+
+# Web app root artifacts (node_modules, .nuxt at web level)
+web/node_modules/
+web/.nuxt/
+web/.dist/
+web/.output/

@@ -8,9 +8,15 @@ dotenv.config({ path: resolve(rootDir, '.env') })
 const env = loadEnv('all', rootDir, '')
 
 export default defineNuxtConfig({
-  extends: ['../../layers/core'],
+  extends: ['../../layers/core', '../../layers/dashboard'],
 
   srcDir: 'app',
+
+  vite: {
+    devServer: {
+      fs: { allow: [resolve(rootDir, 'node_modules')] }
+    }
+  },
 
   runtimeConfig: {
     apiKey: process.env.NUXT_API_KEY || env.NUXT_API_KEY || '',
