@@ -1,9 +1,12 @@
 import tailwindcss from '@tailwindcss/vite'
+import { resolve } from 'node:path'
 
 export default defineNuxtConfig({
   modules: ['@nuxt/ui'],
 
   srcDir: 'app',
+
+  css: [resolve(__dirname, 'app/assets/css/main.css')],
 
   vite: {
     plugins: [tailwindcss()]
